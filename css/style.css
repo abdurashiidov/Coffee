@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Hind Madurai", "Fraunces", "Barlow", "Arial" , sans-serif;
+}
+*, *::after, *::before{
+    box-sizing: inherit;
+}
+.container{
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 15px;
+    flex-grow: 1;
+}
+
+/* start header */
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 44px;
+    margin-bottom: 51px;
+}
+.header__img{
+    margin-top: 10px;
+}
+.header__item{
+    display: flex;
+    list-style-type: none;
+}
+.header__item--list{
+    margin-left: 32px;
+}
+.header__item--a{
+    text-decoration: none;
+    font-family: "Barlow", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.923077px;
+    text-transform: uppercase;
+    color: #83888F;
+}
+.header__item--a:active{
+    font-family: "Barlow", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.923077px;
+    text-transform: uppercase; 
+    color: #333D4B;
+}
+
+/* End of header */
+/* Start Hero */
+
+.main__hero{
+    
+    background-image: url(./../img/hero-img.png);
+    max-width: 1280px;
+    height: 600px;
+    border-radius: 10px;
+    margin-bottom: 195px;
+}
+.hero__wrapper{
+    width: 493px;
+    height: 367px;
+    padding-top: 120px;
+    margin-left: 86px;
+}
+.main__hero--heading-1{
+    margin: 0;
+    padding: 0;
+    height: 145px;
+    left: 0%;
+    right: 0%;
+    top: calc(50% - 145px/2 - 55px);    
+    font-family: "Fraunces", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 72px;
+    color: #FEFCF7;
+    margin-bottom: 32px;
+}
+.main__hero--text{
+    margin: 0;
+    padding: 0;
+    width: 440px;
+    height: 78px; 
+    font-family: "Barlow", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FEFCF7;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+    margin-bottom: 56px;
+}
+.main__hero--btn{
+    font-family: "Fraunces", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 25px; 
+    text-align: center;
+    color: #FEFCF7;
+    width: 217px;
+    height: 56px;
+    background: #0E8784;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+.main__hero--btn:active{
+    background: #66D2CF;
+    border-radius: 6px;
+}
+
+/* End of main */
+/* Start our-collection */
+
+.our-collection{
+    background-image: url(./../img/our-collection.png);
+    background-position-y: -62px;
+    background-repeat: no-repeat;
+    /* background-position: center ; */
+    width: 1111px;
+    height: 524.55px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+.our-collection__list{
+    display: flex;
+    list-style-type: none;
+    text-align: center;
+    align-self: flex-end;
+}
+.our-collection__item{
+    width: 255px;
+    margin-left: 30px;
+}
+
+
+/* .our-collection__item::before{
+    /* content: "";
+    background-repeat:no-repeat ;
+    content: "";
+    width: 255px;
+    height: 193px; */
+
+.pocket-1::before{
+    background-image: url(./../img/pocket-1.png);
+    /* background-position-y: -50px; */
+    transform: translateY(-50px);
+    content: "";
+    display: block; 
+    width: 255px;
+    height: 193px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: -34px;
+}
+
+.pocket-2::before{
+    background-image: url(./../img/pocket-2.png);
+    transform: translateY(-50px);
+    content: "";
+    display: block; 
+    width: 255px;
+    height: 193px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: -34px;
+}
+.pocket-3::before{
+    background-image: url(./../img/pocket-3.png);
+    transform: translateY(-50px);
+    content: "";
+    display: block; 
+    width: 255px;
+    height: 193px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: -34px;
+}
+
+.pocket-4::before{
+    background-image: url(./../img/pocket-4.png);
+    transform: translateY(-48px);
+    content: "";
+    display: block; 
+    width: 234px;
+    height: 177px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 16px;
+    margin-left: -14px;
+}
+
+.our-collection__heading-4{
+    margin: 0;
+    padding: 0;
+    font-family: "Fraunces",  "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;  
+    text-align: center; 
+    color: #333D4B;
+    margin-bottom: 24px;
+    margin-top: 71px;
+}
+.our-collection__text{
+    margin: 0;
+    padding: 0;
+    font-family: "Barlow", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #333D4B;
+    height: 78px;
+}
+
+
+
+
+/* End of our-collection */
+
+
